@@ -63,12 +63,15 @@ p {
     cursor: pointer;
 }
 
+.submit a {
+    color: hsl(0, 0%, 100%);
+} 
+
 .submit {
     padding: 10px;
     background-color: hsl(25, 97%, 53%);
     text-align: center;
     text-transform: uppercase;
-    color: hsl(0, 0%, 100%);
     border-radius: 30px;
     letter-spacing: 2px;
     transition: background-color 0.3s, color 0.3s;
@@ -76,8 +79,11 @@ p {
 
 .submit:hover {
     background-color: hsl(0, 0%, 100%);
-    color: hsl(25, 97%, 53%);
     cursor: pointer;
+}
+
+.submit:hover > a {
+    color: hsl(25, 97%, 53%);
 }
 
 .attribution {
