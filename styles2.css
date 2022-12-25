@@ -21,7 +21,7 @@ body {
 
 img {
     display: block;
-    margin: 15px auto 30px;
+    margin: 10px auto 30px;
 }
 
 .message {
@@ -29,7 +29,7 @@ img {
     color: hsl(25, 97%, 53%);
     border-radius: 30px;
     text-align: center;
-    margin: 0 auto 35px;
+    margin: 0 auto 30px;
     padding: 8px 0 5px;
     width: 58%;
 }
@@ -44,7 +44,7 @@ h1 {
 p {
     color: hsl(216, 12%, 54%);
     font-size: 0.9rem; 
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     line-height: 1.6;
     text-align: center;
     padding: 0 10px;
