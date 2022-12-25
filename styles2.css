@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    padding: 165px 0;
+    position: relative;
+}
+
+#container {
+    background-color: hsl(213, 19%, 18%);
+    width: 390px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+img {
+    display: block;
+    margin: 15px auto 30px;
+}
+
+.message {
+    background-color: hsla(217, 12%, 63%, 0.1);
+    color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    text-align: center;
+    margin: 0 auto 35px;
+    padding: 8px 0 5px;
+    width: 58%;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: hsl(216, 12%, 54%);
+    font-size: 0.9rem; 
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.attribution {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    color: hsl(216, 12%, 8%);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.attribution:hover > a {
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+a {
+    color: hsl(216, 12%, 8%);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: hsl(216, 12%, 54%);
+}
