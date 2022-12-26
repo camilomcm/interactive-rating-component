@@ -63,6 +63,10 @@ p {
     cursor: pointer;
 }
 
+.active {
+    background-color: hsl(216, 12%, 54%);
+}
+
 .submit a {
     color: hsl(0, 0%, 100%);
 } 
