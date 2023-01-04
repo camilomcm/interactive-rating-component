@@ -1,23 +1,30 @@
 let ratings = document.querySelectorAll('.rating');
-
-// ratings.forEach(rating => {
-//   rating.addEventListener('click', function() {
-//     ratings.forEach(rtng => rtng.classList.remove('active'));
-//     this.classList.add('active');
-//     finalRating = rating.textContent;
-//     console.log(finalRating);
-//   });
-// });
-
-// export let finalRating;
+let submit = document.querySelector('a');
+let mainContainer = document.querySelector('#main-container');
+let resultContainer = document.querySelector('#result-container');
+let message = document.querySelector('.message');
 
 for(let i = 0; i < ratings.length; i++) {
   ratings[i].addEventListener('click', function() {
-    let finalRating;
     for(let rtng = 0; rtng < ratings.length; rtng++) {
       ratings[rtng].classList.remove('active');
     }
-    this.classList.add('active');
-    finalRating = ratings[i].textContent;
+    this.classList.add('active'); 
+    console.log(ratings[i].textContent);
+
+    submit.addEventListener('click', function() {
+      mainContainer.classList.add('hidden');
+      resultContainer.classList.remove('hidden');
+      message.textContent = `You selected ${ratings[i].textContent} out of 5`;
+    })
   });
 };
+
+let getBack = document.querySelector('.arrow-back');
+getBack.addEventListener('click', function() {
+  mainContainer.classList.remove('hidden');
+  resultContainer.classList.add('hidden');
+  for(let i = 0; i < ratings.length; i++) {
+    ratings[i].classList.remove('active');
+  }
+});
