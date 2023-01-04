@@ -1,6 +1,4 @@
-import {funcion} from './script.js'
+import {ratingSelected} from './script.js'
 
-// let message = document.querySelector('.message');
-// message.textContent = `You selected ${finalRating} out of 5`;
-
-console.log(funcion())
+let message = document.querySelector('.message');
+message.textContent = `You selected ${ratingSelected()} out of 5`;
