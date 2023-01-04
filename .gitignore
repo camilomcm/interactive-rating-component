@@ -14,3 +14,8 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# Initial file design
+js/scrips2.js
+page2.html
+styles2.css
